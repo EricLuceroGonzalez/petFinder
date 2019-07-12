@@ -1,6 +1,26 @@
 import React from "react";
 import "./navBar.css";
 
+// Create each nav-item of li
+const NavItem = props => {
+  // check element
+  const pageURI = window.location.pathname + window.location.search;
+  /// check if Active
+  const liClassName = props.path === pageURI ? "nav-item active" : "nav-item";
+  return (
+    <li className={liClassName}>
+      <a href={props.path} className="nav-link">
+        {props.name}
+        {props.path === pageURI ? (
+          <span className="sr-only">(current)</span>
+        ) : (
+          ""
+        )}
+      </a>
+    </li>
+  );
+};
+
 class Navbar extends React.Component {
   render() {
     return (
@@ -21,21 +41,10 @@ class Navbar extends React.Component {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
+            <NavItem path="/" name="Home" />
+            <NavItem path="/page2" name="Page2" />
+            <NavItem path="/page3" name="Page3" />
+            <NavItem path="/page4" name="Page4" />
           </ul>
         </div>
       </nav>
