@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import './App.css';
 import Navbar from "./Components/Navbar";
+import FormBasic from "./Components/FormBasic";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             </p>
           </div>
         </div>
+        <FormBasic/>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import "./navBar.css";
 
 // Create each nav-item of li
