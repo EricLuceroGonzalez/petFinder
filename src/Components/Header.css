@@ -1,0 +1,104 @@
+header {
+  z-index: 0;
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: #333333;
+  /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(
+    to top,
+    #00eafb73 1%,
+    #00c5fbc7 30%,
+    rgb(143, 186, 235) 50%,
+    rgb(250, 255, 214) 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    #00eafb73 1%,
+    #00c5fbc7 30%,
+    rgb(143, 186, 235) 50%,
+    rgb(250, 255, 214) 100%
+  );
+  background-size: 100% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+header h1 {
+  color: rgba(116, 24, 209, 0.87);
+  font-size: 3.3em;
+  margin: 20px auto 10px auto;
+  letter-spacing: 1px;
+  opacity: 1;
+  z-index: 1;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+  font-weight: bolder;
+}
+.span-light {
+  font-weight: 100;
+  text-shadow: none;
+}
+
+.head-btn {
+  margin: 10px 25px 15px 25px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  background: rgba(116, 24, 209, 0.9);
+}
+
+.header-photo img {
+  z-index: 1000;
+  max-width: 240px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  box-shadow: 6px 5px 14px black;
+  /* margin-bottom: 20%; */
+}
+
+.parallax {
+  /* The image used */
+  /* background-image: url("img_parallax.jpg"); */
+  /* Full height *nav/
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divAsButton {
+  padding: 4px 2px;
+  margin: 10px auto;
+  background-color: rgba(34, 142, 242, 1);
+  color: white;
+  font-weight: bold;
+  font-size: 0.75em;
+  border-radius: 6px;
+  width: 100px;
+}
+
+.divAsButton:hover {
+  background-color: rgba(50, 82, 250, 1);
+  text-shadow: 2px 2px 4px black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.divWraper {
+  border: 2px solid rgba(116, 24, 209, 0.87);
+  color: rgba(116, 24, 209, 0.87);
+}
+.theForm{
+  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.4);
+}
+.justBorder{
+  border: 1px solid rgba(116, 24, 209, 0.35);
+}

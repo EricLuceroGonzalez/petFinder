@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./formBasic.css";
 
 class FormBasic extends React.Component {
   constructor() {
@@ -35,23 +36,19 @@ class FormBasic extends React.Component {
     return (
       <form>
         <input
-          type="email"
-          name="email"
-          value={this.state.formControls.email.value}
-          onChange={this.changeHandler}
-        />
-
-        <input
           type="text"
           name="name"
+          placeholder="Nombre"
+          className="shit col-6"
           value={this.state.formControls.name.value}
           onChange={this.changeHandler}
         />
-
         <input
-          type="password"
-          name="password"
-          value={this.state.formControls.password.value}
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          className="shit col-6"
+          value={this.state.formControls.name.value}
           onChange={this.changeHandler}
         />
       </form>

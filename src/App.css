@@ -1,4 +1,10 @@
 .fancyBorder {
     margin: 18px auto;
     box-shadow: 8px 8px 12px gray;
+    color: rgba(128, 118, 118, 0.9);
+}
+
+.para{
+    color: red;
+    padding: 12px 40px;
 }
