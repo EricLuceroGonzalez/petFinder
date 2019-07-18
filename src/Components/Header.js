@@ -20,15 +20,15 @@ class Header extends React.Component {
                 </p>
                 
                 <form className="justify-content-around theForm">
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Do you love your pet?"
                   aria-label="Recipient's username"
                   aria-describedby="basic-addon2"
                 />
-                <div class="input-group-append">
+                <div className="input-group-append">
                   <button className='btn btn-danger'>
                   adas</button>
                 </div>
